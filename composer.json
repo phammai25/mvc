@@ -1,0 +1,18 @@
+{
+    "name": "maimai/mvc_post",
+    "description": "mvc",
+    "type": "php",
+    "require-dev": {
+        "php": "^7.2"
+    },
+    "minimum-stability": "dev",
+    "require": {},
+	"autoload": {
+        "psr-4": {
+        	"MVC_POST\\": "\\",
+            "DB\\" :"\\",
+            "Connect\\":"\\",
+
+        } 
+	}
+}

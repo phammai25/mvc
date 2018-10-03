@@ -1,0 +1,41 @@
+*{
+	
+}
+body{
+	width: 90%;
+}
+.navbar-header li{
+	margin-right: 40px;
+	display: inline-block;
+	list-style-type: none;
+}
+.navbar-header li a{
+		text-decoration: none;
+		color: green;
+}
+tr td a{
+	text-decoration: none;
+	color:red;
+	margin-bottom: 10px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border : 2px solid green;
+	box-shadow: 5px 5px 5px #666;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
