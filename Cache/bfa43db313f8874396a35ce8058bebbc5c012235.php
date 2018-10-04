@@ -4,12 +4,12 @@
 	<title></title>
 </head>
 <body>
-	<form action="user_login.php" name="myform" id="form1" method="GET" onsubmit="return checkEmail()" style="padding-left: 430px">
+	<form action="http://localhost/TT%20PHP/MVC_POST/index.php?url=login/check" name="myform" id="form1" method="POST" onsubmit="return checkEmail()" style="padding-left: 430px">
                 <ul>
                 <li><b>Name:</b><br> <input type="text" style="font-size: 15px;width: 270px;height: 30px" id="name" name="name" value="">
                                     <span id="errorname" class="error"></span>
                 </li>
-                  <li><b>Passwword:</b><br> <input type="text" style="font-size: 15px;width: 270px;height: 30px" id="password" name="password" value="">
+                  <li><b>Passwword:</b><br> <input type="password" style="font-size: 15px;width: 270px;height: 30px" id="password" name="password" value="">
                                     <span id="errorpassword" class="error"></span>
                 </li>
                 </ul>

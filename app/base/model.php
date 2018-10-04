@@ -1,14 +1,14 @@
-<?php
-require_once( 'app/config.php');
-	class Model {
-		function get_all_from($sql){
-			$db = Database::connect();
-			$sql = "SELECT * FROM post";
-			$stmt=$db->prepare($sql);
-			$stmt->execute();
-			$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			$stmt->closeCursor();
-			return $result;
+<!-- <?php
+// require_once( 'app/config.php');
+// 	class Model {
+// 		function get_all_from($sql){
+// 			$db = Database::connect();
+// 			$sql = "SELECT * FROM post";
+// 			$stmt=$db->prepare($sql);
+// 			$stmt->execute();
+// 			$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// 			$stmt->closeCursor();
+// 			return $result;
 		}
 
 		// function themuser($name,$sdt,$password,$email,$linkfb) {
@@ -26,4 +26,4 @@ require_once( 'app/config.php');
 		// $regi->execute($arr);
 		// }
 	}
-?>
+?> -->

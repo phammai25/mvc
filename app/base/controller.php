@@ -1,19 +1,22 @@
 <?php 
-use Jenssegers\Blade\Blade;
-namespace MVC_POST\App\Base;
-class Controller{
-		//tao mot bien model, gan bien nay la object cua class model
-		public $model;
-		public function Model(){
-			$this->model = new model();
-			/*
-				$this->model->fetch(sql);
-			*/
-		}
-		public function render($name,$params){
-			$blade = new Blade('views', 'cache');
+    namespace App\Base;
+    class Controller{
+        // load Model
+        public function model($model){
+            $linkModel = "Model\\". $model;
+            return ( new $linkModel());
+        // print_r (new $linkModel());
 
-			echo $blade->make('homepage', ['name' => 'John Doe'])->render();
-		}
-	}
- ?>
+        }
+
+        // load view
+        // public function view($view, $data =[]){
+        
+        //     if(file_exists("Views\\" . $view . ".php")){
+        //         require_once "Views\\" . $view . ".php";
+        //     }else{
+        //         die ("view not exits");
+        //     }
+        // }
+    }
+?>

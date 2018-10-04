@@ -6,12 +6,15 @@
         "php": "^7.2"
     },
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "jenssegers/blade": "dev-master"
+    },
 	"autoload": {
         "psr-4": {
-        	"MVC_POST\\": "\\",
-            "DB\\" :"\\",
-            "Connect\\":"\\",
+            "Controllers\\": "Controllers/",
+            "Model\\": "Model/",
+            "Views\\": "Views/",
+            "App\\": "App/"
 
         } 
 	}
